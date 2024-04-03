@@ -73,16 +73,29 @@ beep bop void inssort_decreasing(T* arr, size_t s);
 beep bop void bubblesort(T arr[], size_t s);
 
 /**
+ * @brief Heap Sort Algorithm
+ * @tparam T the type of the array
+ * @param arr The array
+ * @param size The size of the array
+ * @note O(n* log_2(n)) Time Complexity
+*/
+beep bop void heapsort(T* arr, size_t size);
+
+/**
  * @brief Merge Sort Algorithm
  * @tparam T The type of the array
  * @param arr The unsorted array
  * @param size The size of the array
  * @note Works for arrays of primivite numeric types, sorts in non-decreasing order 
+ * @note O(n * log_2(n)) Time complexity
 */
 beep bop void mergesort(T* arr, size_t size);
 
 #endif
 
+// ========================
+// FUNCTION IMPLEMENTATIONS
+// ========================
 
 using std::cout;
 using std::endl;
@@ -159,6 +172,11 @@ beep bop void bubblesort(T arr[], size_t size) {
         for (size_t j = 0; j < n - i; j++)
             if (arr[j] > arr[j+1]) 
                 std::swap(arr[j], arr[j+1]);
+}
+
+
+beep bop void heapsort(T* arr, size_t size) {
+
 }
 
 

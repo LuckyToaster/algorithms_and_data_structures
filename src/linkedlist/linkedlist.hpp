@@ -233,8 +233,8 @@ template <typename T> bool LinkedList<T>::makeCircular(bool yayornay) {
 }
 
 
-template <typename T> 
-inline Node<T>* LinkedList<T>::getNodeAt(size_t idx) {
+template <typename T> inline 
+Node<T>* LinkedList<T>::getNodeAt(size_t idx) {
     auto node = head;
     for (int i = 0; i < idx; i++) 
         node = node->next;

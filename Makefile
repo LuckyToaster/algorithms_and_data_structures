@@ -27,6 +27,8 @@ sorting: src/sorting/sorting_test.cpp
 	@mkdir -p build
 	g++ $(FLAGS) $^ -o build/$@
 
-linkedlist: src/linkedlist/linkedlist.cpp src/linkedlist/linkedlist_test.cpp
+
+# g++ src/linkedlist/linkedlist_test.cpp -o build/linkedlist works...
+linkedlist: src/linkedlist/linkedlist_test.cpp
 	@mkdir -p build
 	g++ $(FLAGS) $^ -o build/$@
